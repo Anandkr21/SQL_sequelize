@@ -8,7 +8,7 @@ This is very Basic app using SQL Squelize which store data in SQL Database, it's
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Anandkr21/SQL_sequelize.git
 ```
 
 Go to the project directory
