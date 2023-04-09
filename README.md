@@ -41,9 +41,9 @@ Contributions are always welcome!
 
 ## Feedback
 
-If you have any feedback, please reach out to us at anandkumargupta.akg15@gmail.com
+If you have any feedback, please reach out to me at anandkumargupta.akg15@gmail.com
 
 
 ## Author
 
-- [@anand](https://github.com/Anandkr21)
+- [@Anand](https://github.com/Anandkr21)
