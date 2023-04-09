@@ -11,12 +11,6 @@ Clone the project
   git clone https://github.com/Anandkr21/SQL_sequelize.git
 ```
 
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
 Install dependencies
 
 ```bash
