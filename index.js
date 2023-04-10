@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
 })
 
 // Routes goes here
-app.use('/', userRouter);
-app.use('/', userOrder);
+app.use('/auth', userRouter);
+app.use('/orders', userOrder);
 
 // Connection with Server
 app.listen(process.env.port, async () => {

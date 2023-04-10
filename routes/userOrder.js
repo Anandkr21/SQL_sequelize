@@ -6,7 +6,7 @@ const userOrder = express.Router();
 // CRUD operataion strats from here
 
 // Create
-userOrder.post('/orders/create', authentication, async (req, res) => {
+userOrder.post('/create', authentication, async (req, res) => {
     try {
         const { name, quantity, total_price } = req.body;
         const data = await orders.create({

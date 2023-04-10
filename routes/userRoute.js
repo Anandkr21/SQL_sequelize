@@ -7,7 +7,7 @@ require('dotenv').config();
 const userRouter = express.Router()
 
 // User Registeration
-userRouter.post('/auth/register', async (req, res) => {
+userRouter.post('/register', async (req, res) => {
     try {
         const { name, email, password } = req.body;
         const existing = await users.findOne({ where: { email } });
@@ -23,7 +23,7 @@ userRouter.post('/auth/register', async (req, res) => {
                         email,
                         password: hash
                     })
-                    res.send(data);
+                    res.send({"msg": "You are registered", data});
                 }
             })
         }
@@ -33,7 +33,7 @@ userRouter.post('/auth/register', async (req, res) => {
 })
 
 // User Login
-userRouter.post('/auth/login', async (req, res) => {
+userRouter.post('/login', async (req, res) => {
     try {
         const { email, password } = req.body;
         const data = await users.findOne({ where: { email } });
@@ -50,7 +50,7 @@ userRouter.post('/auth/login', async (req, res) => {
             res.send('User not found!')
         }
     } catch (err) {
-        res.send(err);
+        res.send({'msg': err});
     }
 })
 
